@@ -1,8 +1,10 @@
-# React + Vite
+# Sticky Note Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./screenshot.png" alt="screenshot of React Sticky Notes App" />
 
-Currently, two official plugins are available:
+## Description:
+This project I originally built in React while I was working on the [https://skillcrush.com/break-into-tech-blueprint/](Skillcrush Break Into Tech Frontend Developer Track). I finished the program in 2021. In 2024 I revisited the CSS and reviewed the code.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project I had originally built with CreateReact App but in 2024 I switched my local copy to Vite and also deployed the app on netlify.
+
+[View project on netlify](https://sticky-note-2024.netlify.app/)

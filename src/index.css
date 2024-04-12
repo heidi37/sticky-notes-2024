@@ -5,9 +5,18 @@
 
 body {
   margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #41463D;
+  font-weight: 300;
+  font-size: 4rem;
 }
 
 input,
@@ -20,40 +29,49 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin: 0;
+  margin: 2rem auto;
+  justify-content: center;
+  max-width: 1000px;
 }
 
 .app-header__title {
   margin: 10px 20px 0px;
-  font-family: Arial, sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
 .app-header__controls {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 10px 0 0 10px;
+  justify-content: center;
+  margin: 2rem 0 0 10px;
 }
 
 .search,
 .add-new {
-  font-size: 14px;
+  font-size: 1.2rem;
   padding: 5px;
   margin: 8px;
+  font-weight: 500;
 }
 
 .search {
   flex-grow: 1;
-  max-width: 300px;
+  width: 300px;
+  margin-bottom: 2rem;
 }
 
 .add-new {
-  border-radius: 5px;
   cursor: pointer;
-  padding: 8px;
-  font-weight: bolder;
-  background-color: #eee;
-  outline: none;
+  padding: 15px 25px;
+  background-color: #45062E;
+  border: none;
+  color: #fff;
+  transition: background-color .2s ease-in;
+}
+
+.add-new:hover {
+  background-color: #41463D;
 }
 
 .note {
@@ -63,9 +81,8 @@ textarea {
   width: 200px;
   height: 200px;
   margin: 10px;
-  background-color: lightyellow;
-  border: 1px solid grey;
-  box-shadow: 2px 2px 3px lightgrey;
+  background-color: #ffff86;
+  box-shadow: 1px 1px 5px 1px lightgrey;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -74,20 +91,27 @@ textarea {
 
 .note__title,
 .note__description {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", cursive;
   width: 100%;
   padding: 8px 14px;
   background: transparent;
+  border: none;
 }
 
 .note__title {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #333;
 }
 
 .note__description {
   flex-grow: 1;
   font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #222;
+  background-color: #ffffe0;
+  padding-top: .5rem;
 }
 
 .note__delete {
@@ -102,4 +126,37 @@ textarea {
 .note__delete:hover {
   color: black;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem 0;
+  background: #404ea00f;
+  font-family: Roboto, sans-serif;
+}
+
+footer p, footer small {
+  text-align: center;
+}
+
+footer a {
+  color: #39457b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .fa-terminal{
+  animation: terminal-animate 1.5s infinite;
+}
+
+@keyframes terminal-animate {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
