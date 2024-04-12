@@ -1,6 +1,6 @@
 # Sticky Note Application
 
-<img src="./src/assets/screenshot.png" alt="screenshot of React Sticky Notes App" />
+<img src="./public/screenshot.png" alt="screenshot of React Sticky Notes App" />
 
 ## Description:
 This project I originally built in React while I was working on the [Skillcrush Break Into Tech Frontend Developer Track](https://skillcrush.com/break-into-tech-blueprint/). I finished the program in 2021. In 2024 I revisited the CSS and reviewed the code.
